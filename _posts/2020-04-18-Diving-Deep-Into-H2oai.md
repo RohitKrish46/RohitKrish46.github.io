@@ -20,9 +20,7 @@ After the rise of GPUs in the 21st century there has been quite significant prog
 ---
 H2O.ai is the open source leader in AI and machine learning with a mission to democratize AI for everyone. H2O supports the most widely used machine learning algorithms and also has an AutoML functionality which is being used by hundreds of thousands of data scientists in over 20,000 organizations globally. H2O can easily and quickly derive insights from the data through faster and better predictive modeling.
 
-<div style="text-align: center;">
-![](../images/deepLearning.png) 
-</div>
+![image](../imagesdeepLearning.png) 
 
 ## Deep Learning Overview
 
@@ -167,4 +165,4 @@ To summarize, we initially used H2O flow to build a deep learning model which wa
 
 [2. The different flavors of AutoML](https://www.h2o.ai/blog/the-different-flavors-of-automl/?gclid=CjwKCAjwp-X0BRAFEiwAheRuiwM--dObhCzSqNCXgYYSMslEEcfaDwgHFiQwvi8V72Dz3maL8ryf9RoChzQQAvD_BwE)
 
-[3. H2O.ai Docs](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/deep-learning.html)
+[3]http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/deep-learning.html
