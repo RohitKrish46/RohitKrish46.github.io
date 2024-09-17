@@ -16,7 +16,7 @@ main:
   #   url: /portfolio/
         
   - title: "Rohit's Blog"
-    url: /year-archive/
+    url: /blog/
     
   - title: "CV"
     url: /files/Rohit_Resume.pdf
