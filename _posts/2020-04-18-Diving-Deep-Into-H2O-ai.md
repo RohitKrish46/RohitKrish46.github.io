@@ -4,10 +4,7 @@ date: 2020-04-18
 permalink: https://medium.com/@Msdhoni_07/diving-deep-into-h2o-ai-995921279889
 tags:
   - cool posts
----
-Diving-Deep-Into-H2O.ai
 ------
-# Diving Deep Into H2O.ai
 
 Artificial Intelligence, Deep Learning, Machine Learning whatever you are doing if you don't understand it, Learn it. Because otherwise, you are going to be a dinosaur within 3 years. - Mark Cuban
 ![](images/h2oai.gif)
