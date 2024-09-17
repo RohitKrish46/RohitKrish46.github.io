@@ -8,7 +8,7 @@ tags:
   - Transformers
 ---
 
-This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool. 
+This blog delves into how transformers and self-attention are pushing the boundaries of NLP and shaping the AI landscape.
 
 ## 1. Introduction
 
@@ -223,4 +223,8 @@ AI content creation tools:
 In conclusion, the development of transformers and self-attention mechanisms has had a profound impact on natural language processing and deep learning. These technologies have helped to address long-standing issues with sequence modeling and have paved the way for new advances in fields such as machine translation, summarization, and question answering. The ability of transformers to capture long-range dependencies and understand the meaning of a word in the context of an entire sentence has revolutionized the way we approach natural language processing tasks. As the field continues to evolve, we can expect further breakthroughs in the development of advanced language models and AI tools surrounding it that can generate even more human-like responses and improve the accuracy and efficiency of AI-driven language processing. 
 
 ## 7. References
-[]()
+[1. The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+
+[2. Long Short-Term Memory (LSTM)](https://medium.com/@kangeugine/long-short-term-memory-lstm-concept-cb3283934359)
+
+[3. DALL.E2 for image generation](https://openai.com/index/dall-e-2/)
