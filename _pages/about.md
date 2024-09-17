@@ -9,7 +9,7 @@ redirect_from:
 
 
 
-![](../images/life.png){: .align-right width="300px"}
+![](../images/life.png){: .align-right width="300px" height:"500px"}
 👨🏻‍💻 I'm a seasoned Machine Learning Engineer with a Master's degree in Computer Science from Simon Fraser University. 
 
 🤖 My professional experience spans roles in deep learning, computer vision, natural language processing, and generative AI, where I aim to leverage AI to enhance productivity and solve complex real-world problems.
