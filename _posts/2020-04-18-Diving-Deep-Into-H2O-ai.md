@@ -7,23 +7,23 @@ tags:
 ------
 
 Artificial Intelligence, Deep Learning, Machine Learning whatever you are doing if you don't understand it, Learn it. Because otherwise, you are going to be a dinosaur within 3 years. - Mark Cuban
-![](images/h2oai.gif)
+![](h2oai.gif)
 After the rise of GPUs in the 21st century there has been quite significant progress in the world of deep learning, and everyone wants to learn machine learning and deep learning algorithms too. But most of them do not know how to get hands-on experience by implementing machine learning and deep learning models. This is exactly where H2O comes into the picture.
 
 ## What is H2O.ai
 
 H2O.ai is the open source leader in AI and machine learning with a mission to democratize AI for everyone. H2O supports the most widely used machine learning algorithms and also has an AutoML functionality which is being used by hundreds of thousands of data scientists in over 20,000 organizations globally. H2O can easily and quickly derive insights from the data through faster and better predictive modeling.
 
-![](images\deepLearning.png) 
+![](deepLearning.png) 
 
 ## Deep Learning Overview
 
 To begin with, let us have a brief overview of deep neural networks for supervised learning tasks. There are several theoretical frameworks for Deep Learning, but we would be focussing primarily on the Feed Forward architecture used by H2O.
-![Feed Forward Neural Network Architecture](images\FFNN.jpg) 
+![Feed Forward Neural Network Architecture](images/FFNN.jpg) 
 
 This basic framework of multi-layer neural networks can be used to accomplish Deep Learning tasks. Deep Learning architectures are models of hierarchical feature extraction, typically involving multiple levels of nonlinearity. Deep Learning models can learn useful representations of raw data and have exhibited high performance on complex data such as images, speech, and text.
 
-![](images\decap.png) 
+![](decap.png) 
 
 ## H2O's Architecture
 
