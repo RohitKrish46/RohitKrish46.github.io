@@ -1,12 +1,14 @@
 ---
 title: 'Diving Deep Into H2O.ai'
 date: 2020-04-18
-permalink: /posts/2020/04/Diving Deep Into H2O.ai/
+permalink: /posts/2020/04/Diving-Deep-Into-H2O.ai/
 tags:
   - H2O.ai
   - Auto ML
   - MNIST 
 ---
+
+In this blog, we’ll explore H2O.ai’s core features and walk through building a deep learning model using the MNIST dataset, showcasing its practical applications and ease of use.
 
 # Diving Deep Into H2O.ai
 
