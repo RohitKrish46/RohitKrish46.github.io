@@ -228,4 +228,3 @@ In conclusion, the development of transformers and self-attention mechanisms has
 [2. Long Short-Term Memory (LSTM)](https://medium.com/@kangeugine/long-short-term-memory-lstm-concept-cb3283934359)
 
 [3. DALL.E2 for image generation](https://openai.com/index/dall-e-2/)
-
