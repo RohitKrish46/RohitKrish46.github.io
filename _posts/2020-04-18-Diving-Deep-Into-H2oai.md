@@ -12,7 +12,7 @@ tags:
 ---
 > Artificial Intelligence, Deep Learning, Machine Learning whatever you > are doing if you don't understand it, Learn it. Because otherwise, ? > you are going to be a dinosaur within 3 years. - **Mark Cuban**
 
-![image](images/h2oai.gif)
+![](./images/h2oai.gif)
 
 After the rise of GPUs in the 21st century there has been quite significant progress in the world of deep learning, and everyone wants to learn machine learning and deep learning algorithms too. But most of them do not know how to get hands-on experience by implementing machine learning and deep learning models. This is exactly where H2O comes into the picture.
 
@@ -20,7 +20,7 @@ After the rise of GPUs in the 21st century there has been quite significant prog
 ---
 H2O.ai is the open source leader in AI and machine learning with a mission to democratize AI for everyone. H2O supports the most widely used machine learning algorithms and also has an AutoML functionality which is being used by hundreds of thousands of data scientists in over 20,000 organizations globally. H2O can easily and quickly derive insights from the data through faster and better predictive modeling.
 
-![image](../imagesdeepLearning.png) 
+![](../images/deepLearning.png) 
 
 ## Deep Learning Overview
 
