@@ -17,7 +17,7 @@ My Intrests
 ======
 - Deep Learning
 - LLMs
-- 
+- Gen AI
 - RAG Applications
 - 
 
