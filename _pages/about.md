@@ -9,12 +9,12 @@ redirect_from:
 
 
 
-![](../images/life.png){: .align-right width="300px" height:"500px"}
+![](../images/life.png){: .align-right width="300px"}
 👨🏻‍💻 I'm a seasoned Machine Learning Engineer with a Master's degree in Computer Science from Simon Fraser University. 
 
-🤖 My professional experience spans roles in deep learning, computer vision, natural language processing, and generative AI, where I aim to leverage AI to enhance productivity and solve complex real-world problems.
+🤖 My experience spans roles in SDE, ML, DL, CV, NLP, and Gen AI, with a focus on leveraging LLMs to boost productivity and tackle complex problems.
 
-🧬My interests extend to the intersection of AI, cosmology, and the origins of life, exploring how AI can push the boundaries of human understanding.
+🧬I am interested in how AI intersects with cosmology, the origins of life, and its potential to expand human understanding.
 
 💼 I am actively exploring new job opportunities to broaden my impact in the field, while continuously honing my skills by staying up to date with the latest tools and technologies.
 
