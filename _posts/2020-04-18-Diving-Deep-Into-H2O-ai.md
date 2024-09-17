@@ -157,5 +157,7 @@ To summarize, we initially used H2O flow to build a deep learning model which wa
 ## References
 
 [1]https://github.com/h2oai/h2o-tutorials
+
 [2]https://www.h2o.ai/blog/the-different-flavors-of-automl/?gclid=CjwKCAjwp-X0BRAFEiwAheRuiwM--dObhCzSqNCXgYYSMslEEcfaDwgHFiQwvi8V72Dz3maL8ryf9RoChzQQAvD_BwE
+
 [3]http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/deep-learning.html
