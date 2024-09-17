@@ -7,7 +7,9 @@ tags:
 ------
 
 Artificial Intelligence, Deep Learning, Machine Learning whatever you are doing if you don't understand it, Learn it. Because otherwise, you are going to be a dinosaur within 3 years. - Mark Cuban
+
 ![](h2oai.gif)
+
 After the rise of GPUs in the 21st century there has been quite significant progress in the world of deep learning, and everyone wants to learn machine learning and deep learning algorithms too. But most of them do not know how to get hands-on experience by implementing machine learning and deep learning models. This is exactly where H2O comes into the picture.
 
 ## What is H2O.ai
@@ -53,10 +55,12 @@ Let us now apply some of the above-mentioned functionalities to build a deep lea
 ## MNIST Digit Classification
 
 ![A survey of handwritten digits](images\handwritten_digits.png) 
+
+
 Let's start with one of the well known basic deep learning examples of classifying digits using the MNIST dataset to demonstrate how H2O flow can be used to run deep learning models very efficiently. The data consists of 60,000 training images and 10,000 test images. Each image is a standardized 28x28 pixel grayscale image of a single handwritten digit.
 Before that, you may have to set up H2O flow in our system. You can download the package from https://www.h2o.ai/download/#h2o and then run the following commands to install H2O dependencies in your system.
 
-![](images\1.png) 
+![](C:\Users\krish\Projects\rohit-krish.github.io\images\1.png) 
 
 After that open up http://localhost:54321 in your browser and voila! You are there with one of the finest platforms to execute machine learning and deep learning models with ease.
 
