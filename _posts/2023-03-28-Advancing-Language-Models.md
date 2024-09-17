@@ -17,14 +17,14 @@ This blog delves into how transformers and self-attention are pushing the bounda
 AI is becoming increasingly prevalent daily, which led many to debate whether humans are moving into the AI era. We are already in the AI era; from chatbots and virtual assistants to self-driving cars and predictive analytics, AI transforms how we live and work.
 
 <div align="center">
-  <img src="../images/ai_components.png" alt=""/>
+  <img src="../images/ai_components.png" alt="" width="300"/>
 </div>
 
 While many may view this as a threat to human jobs and autonomy, others see it as an opportunity for innovation and progress. As we move further into the AI era, it is important to understand the potential benefits and challenges of this technology and to work towards building a strong foundation of AI literacy and education
 
 ## The Rising Popularity of AI
 <div align="center">
-  <img src="../images/humonoid_robot.png" alt=""/>
+  <img src="../images/humonoid_robot.png" alt="" width="300"/>
 </div>
 
 While ChatGPT is a language model that has risen in popularity and contributed to the development and improvement of AI, it would not be accurate to say that it is a major influencer of the rising popularity of AI. The factors such as the availability of big data, improved computing power, and breakthroughs in AI research, have been the main drivers of the recent growth in AI. However, we can say that language models like ChatGPT have played an important role in advancing the field of natural language processing (NLP), which is a key area of AI research. ChatGPT and other NLP models have demonstrated impressive capabilities in generating human-like text and understanding language, which has opened up new possibilities for applications like chatbots, virtual assistants, and content generation. As AI continues to advance, NLP models like ChatGPT will play an increasingly important role in shaping the future of AI and its applications.
@@ -45,7 +45,7 @@ The first stage, statistical models, emerged in the late 1950s and 1960s and rel
 In the 2000s and 2010s, neural network-based models such as Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTM) networks gained prominence. 
 
 <div align="center">
-  <img src="../images/RNN.png" alt=""/>
+  <img src="../images/RNN.png" alt="" width="300"/>
   <p><br>  An unrolled recurrent neural network(RNN). </p>
 </div>
 
