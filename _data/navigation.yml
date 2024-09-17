@@ -13,7 +13,7 @@ main:
   #   url: /teaching/    
     
   - title: "Portfolio"
-    url: https://scholar.google.com/citations?hl=en&user=ZQet4_cAAAAJ
+    url: /portfolio/
         
   - title: "Blog Posts"
     url: /year-archive/
