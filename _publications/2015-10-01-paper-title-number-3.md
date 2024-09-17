@@ -4,12 +4,12 @@ collection: publications
 category: manuscripts
 permalink: https://link.springer.com/chapter/10.1007/978-3-030-04061-1_24 
 #/springer/2019-01-02-Detection of Lymph Nodes Using Centre of Mass and Moment Analysis
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
+# excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
 date: 2019-01-02
-venue: 'Computer Aided Intervention and Diagnostics in Clinical and Medical Images'
+venue: 'Springer: Computer Aided Intervention and Diagnostics in Clinical and Medical Images'
 slidesurl: '/files/Detection of Lymph Nodes Using Centre of Mass and Moment Analysis.pdf'
 paperurl:  'https://link.springer.com/chapter/10.1007/978-3-030-04061-1_24'
-citation: 'Akshai, R., Rohit Krishnan, S., Swetha, G., Venkatesh, B.P. (2019). &quot;Detection of Lymph Nodes Using Centre of Mass and Moment Analysis.&quot; <i>Computer Aided Intervention and Diagnostics in Clinical and Medical Images.</i>. vol 31.'
+citation: 'Akshai, R., Rohit Krishnan, S., Swetha, G., Venkatesh, B.P. (2019). &quot;Detection of Lymph Nodes Using Centre of Mass and Moment Analysis.&quot; <i>Computer Aided Intervention and Diagnostics in Clinical and Medical Images.</i>. vol 31. pp 239–246'
 ---
 
 Abstract
