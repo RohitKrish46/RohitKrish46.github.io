@@ -9,28 +9,40 @@ tags:
 ---
 
 # Diving Deep Into H2O.ai
----
+
 > Artificial Intelligence, Deep Learning, Machine Learning whatever you are doing if you don't understand it, Learn it. Because otherwise, ? you are going to be a dinosaur within 3 years. - **Mark Cuban**
 
-![](../images/h2oai.gif)
+<div align="center">
+  <img src="../images/h2oai.gif" alt=""/>
+</div>
 
 After the rise of GPUs in the 21st century there has been quite significant progress in the world of deep learning, and everyone wants to learn machine learning and deep learning algorithms too. But most of them do not know how to get hands-on experience by implementing machine learning and deep learning models. This is exactly where H2O comes into the picture.
 
 ## What is H2O.ai
----
+
 H2O.ai is the open source leader in AI and machine learning with a mission to democratize AI for everyone. H2O supports the most widely used machine learning algorithms and also has an AutoML functionality which is being used by hundreds of thousands of data scientists in over 20,000 organizations globally. H2O can easily and quickly derive insights from the data through faster and better predictive modeling.
 
-<div style="text-align: center;">
-![](../images/deepLearning.png) 
+<div align="center">
+  <img src="../images/deepLearning.png" alt=""/>
 </div>
+
+
 ## Deep Learning Overview
 
 To begin with, let us have a brief overview of deep neural networks for supervised learning tasks. There are several theoretical frameworks for Deep Learning, but we would be focussing primarily on the Feed Forward architecture used by H2O.
-![Feed Forward Neural Network Architecture](../images/FFNN.jpg) 
+
+
+<div align="center">
+  <img src="../images/FFNN.jpg" alt=""/>
+  <p><br>Feed Forward Neural Network Architecture</p>
+</div>
+
 
 This basic framework of multi-layer neural networks can be used to accomplish Deep Learning tasks. Deep Learning architectures are models of hierarchical feature extraction, typically involving multiple levels of nonlinearity. Deep Learning models can learn useful representations of raw data and have exhibited high performance on complex data such as images, speech, and text.
 
-![](../images/decap.png) 
+<div align="center">
+  <img src="../images/decap.png" alt=""/>
+</div>
 
 ## H2O's Architecture
 
@@ -59,13 +71,17 @@ Let us now apply some of the above-mentioned functionalities to build a deep lea
 
 ## MNIST Digit Classification
 
-![A survey of handwritten digits](../images/handwritten_digits.png) 
-
+<div align="center">
+  <img src="../images/handwritten_digits.png" alt=""/>
+  <p><br>A survey of handwritten digits</p>
+</div>
 
 Let's start with one of the well known basic deep learning examples of classifying digits using the MNIST dataset to demonstrate how H2O flow can be used to run deep learning models very efficiently. The data consists of 60,000 training images and 10,000 test images. Each image is a standardized 28x28 pixel grayscale image of a single handwritten digit.
 Before that, you may have to set up H2O flow in our system. You can download the package from https://www.h2o.ai/download/#h2o and then run the following commands to install H2O dependencies in your system.
 
-![](../images/1.png) 
+<div align="center">
+  <img src="../images/1.png" alt=""/>
+</div>
 
 After that open up http://localhost:54321 in your browser and voila! You are there with one of the finest platforms to execute machine learning and deep learning models with ease.
 
@@ -75,24 +91,37 @@ In this MNIST dataset example, we are using the publicly available training and 
 Following are the commands to import test and train set in H2O Flow
 Train Set:
 
-![](../images/2.png) 
+<div align="center">
+  <img src="../images/2.png" alt=""/>
+</div>
 
 Test Set:
 
-![](../images/3.png) 
+<div align="center">
+  <img src="../images/3.png" alt=""/>
+</div>
 
 ### Parsing the Data
 Once the MNIST dataset is imported, the data must be parsed according to the nature of the dataset which includes mentioning the type of parser, what type of separator to use and details about if the first row is a column or not before generating the data frame that is to be used for model building.
 
-![](../images/4.png) 
+<div align="center">
+  <img src="../images/4.png" alt=""/>
+</div>
 
-![MNIST train dataframe](../images/5.png) 
+
+<div align="center">
+  <img src="../images/5.png" alt=""/>
+  <p><br>MNIST train dataframe</p>
+</div>
 
 ### Building model
 
 Now that we have our test.hex and train.hex (H2O's data frames) we have multiple options to explore like splitting the dataset into subsets, using AutoML to find out the best model or to build our model on top of this dataset.
 
-![This illustrates how to set our parameter values for our specified model.](../images/6.png) 
+<div align="center">
+  <img src="../images/6.png" alt=""/>
+  <p><br>This illustrates how to set our parameter values for our specified model.</p>
+</div>
 
 Here we can use the built-in H2O flow's 'Build a model' feature to build a model with our model parameters for any given dataset, in this case, our MNIST dataset. Below are some of the parameters I used:
 Validation_frame list, select the parsed testing test.hex dataset as validation data.
@@ -103,7 +132,11 @@ Activation list, select RectifierWithDropout.
 Input_dropout_ratio, specify 0.2 and for Hidden_dropout_ratios, specify 0.3,0.2.
 Stopping_metric to misclassification, Stopping_rounds to 3 and Stopping_tolerance to 1e-2 for early stopping based on the convergence of the misclassification rate
 
-![Build a model script with the respective parameters](../images/7.png) 
+
+<div align="center">
+  <img src="../images/7.png" alt=""/>
+  <p><br>Build a model script with the respective parameters</p>
+</div>
 
 ### Model Results:
 
@@ -113,31 +146,52 @@ After successfully building the model it is now time to review our model's perfo
 
 For a general classification problem, we use Logarithmic loss as a measure to rate the model's performance. Logarithmic loss measures the performance of a classification model where the prediction input is a probability value between 0 and 1. The goal of our machine learning models is to minimize this value. A perfect model would have a log loss of 0.
 
-![LogLoss scores for train and validation sets vs the number of epochs](../images/8.png) 
+<div align="center">
+  <img src="../images/8.png" alt=""/>
+  <p><br>LogLoss scores for train and validation sets vs the number of epochs</p>
+</div>
 
 ### Variable Importances:
 
 Variable importance is determined by calculating the relative influence of each variable- if that variable had a bigger impact in classifying the image during the model building process and how much the performance increased or decreased as its result.
 
-![A bar graph showing features that impact the model](../images/9.png) 
+<div align="center">
+  <img src="../images/9.png" alt=""/>
+  <p><br>A bar graph showing features that impact the model</p>
+</div>
 
-![Table with features that impact the model](../images/10.png) 
+<div align="center">
+  <img src="../images/10.png" alt=""/>
+  <p><br>Table with features that impact the model</p>
+</div>
 
 ### Confusion Matrix
 
 A confusion matrix is a summary of prediction results on a classification problem. The number of correct and incorrect predictions are summarized with count values and broken down by each class. The confusion matrix shows how your classification model is confused when it makes predictions. It gives us insights not only into the errors being made by a classifier but more importantly the types of errors that are being made. Our model, without distortions, convolutions, or other advanced image processing techniques produces almost 0.97–0.99 precision scores on the validation set.
 
-![Confusion matrix for the training set](../images/11.png) 
+<div align="center">
+  <img src="../images/11.png" alt=""/>
+  <p><br>Confusion matrix for the training set</p>
+</div>
 
-![Confusion Matrix for the validation set](../images/12.png) 
+<div align="center">
+  <img src="../images/12.png" alt=""/>
+  <p><br>Confusion Matrix for the validation set</p>
+</div>
 
 ### Other Metrics:
 
 There are various other useful metrics and comparisons available such as Status of neuron layers (which has information about layer number, units, type, dropout, L1, L2, mean rate, rate RMS, momentum, mean weight, weight RMS, mean bias, bias RMS), Top-K Hit Ratios (for multi-class classification), etc which can be used for optimizing the model you build.
 
-![Status of neuron layers of the model created for MNIST dataset](../images/13.png) 
+<div align="center">
+  <img src="../images/13.png" alt=""/>
+  <p><br>Status of neuron layers of the model created for MNIST dataset</p>
+</div>
 
-![Top-10 Hit ratios for respective classes](../images/14.png) 
+<div align="center">
+  <img src="../images/14.png" alt=""/>
+  <p><br>Top-10 Hit ratios for respective classes</p>
+</div>
 
 ## Model building using Auto ML
 
@@ -145,15 +199,27 @@ AutoML is a function in H2O that automates the process of building a large numbe
 The current version of AutoML trains and cross-validates a default Random Forest, an Extremely-Randomized Forest, a random grid of Gradient Boosting Machines (GBMs), a random grid of Deep Neural Nets, a fixed grid of GLMs, and then trains two Stacked Ensemble models at the end. One ensemble contains all the models (optimized for model performance), and the second ensemble contains just the best performing model from each algorithm class/family (optimized for production use).
 Here just to give a quick overview of how auto ML works, we are taking the MNIST dataset and will use just two algorithms (Deep learning and GBM) to compare their resulting models.
 
-![AutoML parameters](../images/15.png) 
+<div align="center">
+  <img src="../images/15.png" alt=""/>
+  <p><br>AutoML parameters</p>
+</div>
 
-![Choosing algorithms to exclude before AutoML run](../images/16.png) 
+<div align="center">
+  <img src="../images/16.png" alt=""/>
+  <p><br>Choosing algorithms to exclude before AutoML run</p>
+</div>
 
 The Auto ML trains 5 models for each algorithm (deep learning and GBM) and comes up with the best model under each algorithm. After this, the AutoML gives the comparative analysis for each of the models that have been trained from where the end-user can get valuable insights.
 
-![The five model trains for GBM algorithm](../images/17.png)
+<div align="center">
+  <img src="../images/17.png" alt=""/>
+  <p><br>The five model trains for GBM algorithm</p>
+</div>
 
-![LogLoss score for best GBM model](../images/18.png)
+<div align="center">
+  <img src="../images/18.png" alt=""/>
+  <p><br>LogLoss score for best GBM model</p>
+</div>
 
 ## Conclusion
 
@@ -166,4 +232,4 @@ To summarize, we initially used H2O flow to build a deep learning model which wa
 
 [2. The different flavors of AutoML](https://www.h2o.ai/blog/the-different-flavors-of-automl/?gclid=CjwKCAjwp-X0BRAFEiwAheRuiwM--dObhCzSqNCXgYYSMslEEcfaDwgHFiQwvi8V72Dz3maL8ryf9RoChzQQAvD_BwE)
 
-[3]http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/deep-learning.html
+[3. H2O.ai Docs](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/deep-learning.html)
