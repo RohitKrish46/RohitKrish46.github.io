@@ -1,7 +1,7 @@
 ---
 title: 'Diving Deep Into H2O.ai'
 date: 2020-04-18
-permalink: /posts/2020/04/Diving-Deep-Into-H2O.ai/
+permalink: /2020-04-18-Diving-Deep-Into-H2oai
 tags:
   - H2O.ai
   - Auto ML

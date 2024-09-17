@@ -1,7 +1,7 @@
 ---
 title: 'Advancing Language Models: How Transformers and Self-Attention Are Changing the Game'
 date: 2023-03-28
-permalink: /posts/2014/08/Advancing-Language-Models-How-Transformers-and-Self-Attention-Are-Changing-the-Game/
+permalink: /2023-03-28-Advancing-Language-Models
 tags:
   - LLMs
   - Language Modelling History
