@@ -19,20 +19,25 @@ redirect_from:
 ## Professional Expereince
 
 
-## Academic History
+# Academic History
 
-### Post Grad.
+## Post Grad.
 
-Degree - **Masters of Science** (MS) in Computer Science (specialization: Visual Computing)   
+**Degree** - *Masters of Science* (MS) in Computer Science (specialization: Visual Computing)   
 
-Period - Sep. 2019 - Apr. 2021
+**Period** - September 2019 - April 2021
 
-Educational institution - [**Simon Fraser University**](https://www.sfu.ca/) -  *Burnaby, British Columbia, Canada* 
+**Educational institution** - [Simon Fraser University](https://www.sfu.ca/)
 
-### Under Grad.
+**Location** -  Burnaby, British Columbia, Canada
 
-Degree - **Bachelor of Engineering** (BE) in Computer Science                                 
 
-Period - Jul. 2014 - Apr. 2018
+## Under Grad.
 
-Educational institution - [**Sairam Engineering College**](https://sairam.edu.in/) - *Chennai, Tamilnadu, India*
+**Degree** - *Bachelor of Engineering* (BE) in Computer Science                                 
+
+**Period** - July 2014 - April 2018
+
+**Educational institution** - [Sairam Engineering College](https://sairam.edu.in/) 
+
+**Location** - Chennai, Tamilnadu, India
