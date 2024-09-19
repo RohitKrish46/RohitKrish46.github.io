@@ -13,5 +13,4 @@ citation: 'Akshai, R., Rohit Krishnan, S., Swetha, G., Venkatesh, B.P. (2019). &
 ---
 
 ## Abstract
-
 A novel technique to determine specific spot where the lymph node is present and also analyse whether it causes cancer or not. Lymph nodes are small structures that filter harmful substances. Their incessant growth may lead to cancer. The two-dimensional image obtained from CT scan is transformed into three-dimensional cube using 3D slicer tool. The centre of mass is calculated and moment of inertia is obtained from centre of mass. The value of moment of inertia is decreased, until a node is detected or it meets a particular threshold. Thus, the proposed method enhances the node detection accuracy and reduces the time taken for detection using possible simple mathematical computations.
