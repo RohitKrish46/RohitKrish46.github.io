@@ -18,62 +18,48 @@ redirect_from:
 
 # Professional History
 
-**Organization** - [AmiableAi Inc.](https://amiableai.ca/)
+### [AmiableAi Inc.](https://amiableai.ca/)
+**Role:** Machine Learning Engineer  
+**Period:** January 2023 – October 2023  
+**Location:** Burnaby, British Columbia, Canada
 
-**Role** - Machine Learning Engineer
-
-**Period** - January 2023 - October 2023
-
-**Location** - Burnaby, British Columbia, Canada
 ---
 
-**Organization** - [VisionBox Inc.](https://www.visionbox.ai/)
+### [VisionBox Inc.](https://www.visionbox.ai/)
+**Role:** Machine Learning Engineer  
+**Period:** March 2022 – December 2022  
+**Location:** Burnaby, British Columbia, Canada
 
-**Role** - Machine Learning Engineer
-
-**Period** - March 2022 - December 2022
-
-**Location** - Burnaby, British Columbia, Canada
 ---
 
-**Organization** - [Medical Image Analysis Lab](https://www.medicalimageanalysis.com/)
+### [Medical Image Analysis Lab](https://www.medicalimageanalysis.com/)
+**Role:** Research Intern  
+**Period:** May 2020 – August 2020  
+**Location:** Burnaby, British Columbia, Canada
 
-**Role** - Research Intern
-
-**Period** - May 2020 - August 2020
-
-**Location** - Burnaby, British Columbia, Canada 
 ---
 
-**Organization** - Prodapt Solutions
-
-**Role** - Associate Software Engineer
-
-**Period** - May 2018 - July 2019
-
-**Location** - Chennai, Tamil Nadu, India
+### [Prodapt Solution](https://www.prodapt.com/)  
+**Role:** Associate Software Engineer  
+**Period:** May 2018 – July 2019  
+**Location:** Chennai, Tamil Nadu, India
 
 
 
 # Academic History
 
-## Post Graduation
+---
 
-**Degree** - *Masters of Science* (MS) in Computer Science (specialization: Visual Computing)   
+### Post-Graduation  
+**Degree:** *Master of Science* (MS) in Computer Science (Specialization: Visual Computing)  
+**Period:** September 2019 – April 2021  
+**Institution:** [Simon Fraser University](https://www.sfu.ca/)  
+**Location:** Burnaby, British Columbia, Canada
 
-**Period** - September 2019 - April 2021
+---
 
-**Educational institution** - [Simon Fraser University](https://www.sfu.ca/)
-
-**Location** -  Burnaby, British Columbia, Canada
-
-
-## Under Graduation
-
-**Degree** - *Bachelor of Engineering* (BE) in Computer Science                                 
-
-**Period** - July 2014 - April 2018
-
-**Educational institution** - [Sairam Engineering College](https://sairam.edu.in/) 
-
-**Location** - Chennai, Tamilnadu, India
+### Under-Graduation  
+**Degree:** *Bachelor of Engineering* (BE) in Computer Science  
+**Period:** July 2014 – April 2018  
+**Institution:** [Sairam Engineering College](https://sairam.edu.in/)  
+**Location:** Chennai, Tamil Nadu, India
