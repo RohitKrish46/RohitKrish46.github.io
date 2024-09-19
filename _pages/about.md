@@ -16,12 +16,48 @@ redirect_from:
 
 💼 I am actively exploring new job opportunities to broaden my impact in the field, while continuously honing my skills by staying up to date with the latest tools and technologies.
 
-## Professional Expereince
+# Professional History
+
+**Organization** - [AmiableAi Inc.](https://amiableai.ca/)
+
+**Role** - Machine Learning Engineer
+
+**Period** - January 2023 - October 2023
+
+**Location** - Burnaby, British Columbia, Canada
+---
+
+**Organization** - [VisionBox Inc.](https://www.visionbox.ai/)
+
+**Role** - Machine Learning Engineer
+
+**Period** - March 2022 - December 2022
+
+**Location** - Burnaby, British Columbia, Canada
+---
+
+**Organization** - [Medical Image Analysis Lab](https://www.medicalimageanalysis.com/)
+
+**Role** - Research Intern
+
+**Period** - May 2020 - August 2020
+
+**Location** - Burnaby, British Columbia, Canada 
+---
+
+**Organization** - Prodapt Solutions
+
+**Role** - Associate Software Engineer
+
+**Period** - May 2018 - July 2019
+
+**Location** - Chennai, Tamil Nadu, India
+
 
 
 # Academic History
 
-## Post Grad.
+## Post Graduation
 
 **Degree** - *Masters of Science* (MS) in Computer Science (specialization: Visual Computing)   
 
@@ -32,7 +68,7 @@ redirect_from:
 **Location** -  Burnaby, British Columbia, Canada
 
 
-## Under Grad.
+## Under Graduation
 
 **Degree** - *Bachelor of Engineering* (BE) in Computer Science                                 
 
