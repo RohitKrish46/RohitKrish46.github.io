@@ -2,7 +2,7 @@
 title: "Editorial Context Solution Using Real Time Interactive Visualisation–Data Driven Story Telling"
 collection: publications
 category: conferences
-permalink: https://www.ijiee.org/index.php?m=content&c=index&a=show&catid=81&id=792
+permalink: 2018-09-03-Editorial-Context-Solution-Using-Real-Time-Interactive-Visualisation–Data-Driven-Story-Telling
 # excerpt: 'This paper is about fixing template issue #693.'
 date: 2018-09-03
 venue: 'IJIEE at Nanyang Technological University, Singapore'

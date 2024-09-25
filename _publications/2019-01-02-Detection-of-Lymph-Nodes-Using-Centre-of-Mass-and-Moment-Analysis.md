@@ -2,7 +2,7 @@
 title: "Detection of Lymph Nodes Using Centre of Mass and Moment Analysis"
 collection: publications
 category: manuscripts
-permalink: https://link.springer.com/chapter/10.1007/978-3-030-04061-1_24 
+permalink: 2019-01-02-Detection-of-Lymph-Nodes-Using-Centre-of-Mass-and-Moment-Analysis 
 #/springer/2019-01-02-Detection of Lymph Nodes Using Centre of Mass and Moment Analysis
 # excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
 date: 2019-01-02
