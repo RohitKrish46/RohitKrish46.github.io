@@ -10,11 +10,11 @@ redirect_from:
 
 
 ![](../images/life.png){: .align-right width="300px"}
-👨🏻‍💻 I am an experienced Machine Learning Engineer with a Master’s degree in Computer Science from Simon Fraser University.
+👨🏻‍💻 I am an seasoned Machine Learning Engineer with extensive hands-on experience in developing and deploying cutting-edge AI and ML solutions.
 
-🤖 My expertise includes Software Development, Machine Learning, Deep Learning, Computer Vision, NLP, and Generative AI, with a focus on leveraging LLMs to solve complex challenges and drive innovation.
+🤖 My expertise includes Machine Learning, Deep Learning, Computer Vision, NLP, and Generative AI, with a focus on leveraging LLMs to solve complex challenges and drive innovation.
 
-💼 Currently, I am seeking new opportunities to expand my contributions in the field, while continually sharpening my skills by staying current with emerging tools and technologies.
+💼 Currently, I am seeking new opportunities eager to apply my diverse skill set to drive impactful solutions and tackle complex challenges in my next role.
 
 
 # Professional History
