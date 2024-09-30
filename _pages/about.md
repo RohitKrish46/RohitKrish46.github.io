@@ -10,7 +10,7 @@ redirect_from:
 
 
 ![](../images/life.png){: .align-right width="300px"}
-👨🏻‍💻 I am an seasoned Machine Learning Engineer with extensive hands-on experience in developing and deploying cutting-edge AI and ML solutions.
+👨🏻‍💻 I am a seasoned Machine Learning Engineer with extensive hands-on experience in developing and deploying cutting-edge AI and ML solutions.
 
 🤖 My expertise includes Machine Learning, Deep Learning, Computer Vision, NLP, and Generative AI, with a focus on leveraging LLMs to solve complex challenges and drive innovation.
 
