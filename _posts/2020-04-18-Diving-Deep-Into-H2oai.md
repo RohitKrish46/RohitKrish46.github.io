@@ -16,6 +16,7 @@ About the key features of H2O.ai for building deep learning models.
   <img src="../images/h2oai.gif" alt=""/>
 </div>
 
+
 After the rise of GPUs in the 21st century there has been quite significant progress in the world of deep learning, and everyone wants to learn machine learning and deep learning algorithms too. But most of them do not know how to get hands-on experience by implementing machine learning and deep learning models. This is exactly where H2O comes into the picture.
 
 ## What is H2O.ai
