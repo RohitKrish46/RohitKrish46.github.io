@@ -8,7 +8,7 @@ tags:
   - MNIST 
 ---
 
-In this blog, I explore H2O.ai's core features and demonstrate how to build a deep learning model with the MNIST dataset, highlighting its practical applications and user-friendly interface.
+About the key features of H2O.ai for building deep learning models.
 
 > Artificial Intelligence, Deep Learning, Machine Learning whatever you are doing if you don't understand it, Learn it. Because otherwise, ? you are going to be a dinosaur within 3 years. - **Mark Cuban**
 
