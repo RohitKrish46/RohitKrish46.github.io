@@ -1,15 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { monoFont } from '@/styles/fonts/fonts'
-import { cn } from '@/lib/utils/utils'
 import TextHeading from '@/components/ui/text-heading/text-heading'
 import Text from '@/components/ui/text/text'
 import { StackVertical } from '@/components/layout/layout-stack/layout-stack'
-import Link from 'next/link'
 import Image from 'next/image'
 import Ruler from '@/components/ui/ruler/ruler'
-import { List, ListItem } from '@/components/ui/list/list'
 
 export function HeroSection() {
     return (
@@ -17,129 +13,54 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="relative pb-8"
+            className="relative pb-4"
         >
-            <div className="relative">
-                <StackVertical gap="xs">
-                    <motion.div
-                        animate={{ 
-                            y: [0, -10, 0],
-                        }}
-                        transition={{ 
-                            duration: 3,
-                            repeat: Infinity,
-                            ease: "easeInOut"
-                        }}
-                        className={cn("text-2xl sm:text-3xl md:text-4xl", monoFont.className)}
-                    >
-                        👾
-                    </motion.div>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-6">
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4 }}
+                    className="flex-shrink-0"
+                >
+                    <Image
+                        src="/image.png"
+                        alt="Rohit Krishnan Somasundaram"
+                        width={140}
+                        height={140}
+                        className="rounded-full object-cover ring-2 ring-purple-500/30"
+                        priority
+                    />
+                </motion.div>
 
+                <StackVertical gap="xs">
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
-                        className="relative"
                     >
                         <TextHeading as="h1" className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-                            Rohit.ml
-                        </TextHeading>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.4 }}
-                    >
-                        <Text >
                             Hi! I am Rohit.
-                        </Text>
-
-                        <Ruler color='colorless' marginTop='lg' marginBottom='none'/>
-
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.5 }}
-                        >
-                            <Text>
-                                I'm a mle based in Vancouver. I love machine learning, math, coffee, and among others. Glad to have you here! Feel free to look around :)
-                            </Text>
-                            <Ruler color='colorless' marginTop='sm' marginBottom='none'/>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.6 }}
-                        >
-                                <Text>
-                                    This is my graph of thoughts, notes, and ideas.
-                                </Text>
-
-                                <Ruler color='colorless' marginTop='lg' marginBottom='none'/>
-
-                                <Text>
-                                    I ramble about things on my{' '}
-                                    <Link href="/blog" className="text-purple-500 font-bold hover:underline">
-                                        blog
-                                    </Link>
-                                    ; you can check it out if you're interested.
-                                </Text>
-
-                                <Ruler color='colorless' marginTop='lg' marginBottom='none'/>
-
-                                <Text>
-                                    Here are some reads I recommend from this site if you're interested:
-                                </Text>
-
-                                <Ruler color='colorless' marginTop='md' marginBottom='none'/>
-
-                                <List spacing='tight'>
-                                    <ListItem>
-                                        <Link href="/about" className="underline hover:text-purple-500">My novice journey, a monologue</Link>
-                                    </ListItem>
-                                    <ListItem>
-                                        <Link href="/blog/my-2025-resolution" className="underline hover:text-purple-500">My 2025 Resolution: Beyond the Roadmaps, Beyond the Timelines</Link>
-                                    </ListItem>
-                                    <ListItem>
-                                        <Link href="/blog/getting-started-with-machine-learning" className="underline hover:text-purple-500">
-                                            Getting Started with Machine Learning
-                                        </Link>
-                                    </ListItem>
-                                </List>
-
-                                <Ruler color='colorless' marginTop='lg' marginBottom='none'/>
-
-                                <Text>
-                                    I also document my learnings through learning reflections every week. You can take a look at those{' '}
-                                    <Link href="/learning/weekly-reflections" className="text-purple-500 font-bold hover:underline">
-                                        here
-                                    </Link>
-                                    .
-                                </Text>
-                        </motion.div>
+                        </TextHeading>
                     </motion.div>
                 </StackVertical>
             </div>
 
+            <Ruler color='colorless' marginTop='none' marginBottom='none' />
+
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 0.7 }}
-                className="mt-8 -mb-8"
+                transition={{ delay: 0.4 }}
             >
-                <div className="relative w-full aspect-[4/3] sm:aspect-[2/1] md:aspect-[21/9] rounded-lg overflow-hidden">
-                    <Image
-                        className="object-cover"
-                        fill
-                        src="/gion-town.png" 
-                        alt="A photo of Gion Town, Kyoto I took on March 2024."
-                        priority
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
-                    />
-                </div>
+                <StackVertical gap="sm">
+                    <Text>
+                        I&apos;m a ML Engineer based in Chennai, India; currently doing MLOps at ACV Auctions. I care deeply about making ML systems that actually work in the real world: systems that are reliable, observable, and useful well beyond a notebook.
+                    </Text>
+                    <Text>
+                        I&apos;m also someone who gets distracted by cosmology and questions about the origins of life. There&apos;s something I find endlessly interesting about the same mathematics showing up in neural networks and in the large-scale structure of the universe. This site is where I write about things I&apos;m trying to understand.
+                    </Text>
+                </StackVertical>
             </motion.div>
         </motion.div>
     )
-} 
+}

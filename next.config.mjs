@@ -27,8 +27,8 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   output: 'export', // 👈 Enable static export
   distDir: 'out',
-  basePath: isProd ? '/RohitKrish46/website' : '', // 👈 Update this
-  assetPrefix: isProd ? '/RohitKrish46/website' : '', // 👈 Update this
+  basePath: '',
+  assetPrefix: '',
   images: {
     unoptimized: true, // 👈 Required for static export
   },

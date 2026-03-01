@@ -1,0 +1,89 @@
+> AI, Deep Learning, Machine Learning — whatever you are doing, if you don't understand it, learn it. Because otherwise, you are going to be a dinosaur within 3 years. — **Mark Cuban**
+
+After the rise of GPUs in the 21st century there has been quite significant progress in the world of deep learning, and everyone wants to learn machine learning and deep learning algorithms. But most people don't know how to get hands-on experience by implementing these models. This is exactly where H2O comes into the picture.
+
+## What is H2O.ai
+
+H2O.ai is the open source leader in AI and machine learning with a mission to democratize AI for everyone. H2O supports the most widely used machine learning algorithms and also has an AutoML functionality which is being used by hundreds of thousands of data scientists in over 20,000 organizations globally. H2O can easily and quickly derive insights from data through faster and better predictive modeling.
+
+## Deep Learning Overview
+
+To begin with, let us have a brief overview of deep neural networks for supervised learning tasks. There are several theoretical frameworks for Deep Learning, but we would be focusing primarily on the Feed Forward architecture used by H2O.
+
+This basic framework of multi-layer neural networks can be used to accomplish Deep Learning tasks. Deep Learning architectures are models of hierarchical feature extraction, typically involving multiple levels of nonlinearity. Deep Learning models can learn useful representations of raw data and have exhibited high performance on complex data such as images, speech, and text.
+
+## H2O's Architecture
+
+H2O follows the model of multi-layer, feed-forward neural networks for predictive modeling. Deep Learning functionalities in H2O flow framework include:
+
+- Supervised training protocol for regression and classification tasks
+- Fast and memory-efficient Java implementations based on columnar compression and fine-grain MapReduce
+- A multi-threaded and distributed parallel computation that can be run on a single or multi-node cluster
+- Automatic, per-neuron adaptive learning rate for fast convergence
+- Optional specification of the learning rate, annealing and momentum options
+- Regularization options such as L1, L2, dropout, Hogwild and model averaging to prevent overfitting
+- Elegant and intuitive web interface (Flow)
+- Fully scriptable R and Python APIs
+- Grid search for hyperparameter optimization and model selection, automatic early stopping based on convergence of user-specified metrics
+- Model checkpointing for reduced run times and model tuning
+- Automatic imputation of missing values (optional)
+- Model export in plain Java code for deployment in production environments
+- Deep autoencoders for unsupervised feature learning and anomaly detection
+
+## MNIST Digit Classification
+
+The data consists of 60,000 training images and 10,000 test images. Each image is a standardized 28×28 pixel grayscale image of a single handwritten digit.
+
+**Setup:** Download from https://www.h2o.ai/download/#h2o then open `http://localhost:54321` in your browser.
+
+### Loading the Dataset
+
+Using publicly available datasets from a public Amazon S3 bucket.
+
+### Parsing the Data
+
+Data must be parsed specifying the type of parser, separator, and whether the first row is a column header, before generating the dataframe.
+
+### Building the Model
+
+Parameters used:
+
+- `validation_frame`: parsed test.hex dataset
+- `response`: last column (C785)
+- `hidden`: 128, 64
+- `epochs`: 500
+- `activation`: RectifierWithDropout
+- `input_dropout_ratio`: 0.2
+- `hidden_dropout_ratios`: 0.3, 0.2
+- `stopping_metric`: misclassification
+- `stopping_rounds`: 3
+- `stopping_tolerance`: 1e-2
+
+### Model Results
+
+**Log Loss:** Logarithmic loss measures classification model performance using probability values between 0 and 1. A perfect model would have a log loss of 0.
+
+**Variable Importances:** Determined by calculating the relative influence of each variable based on impact during the model building process.
+
+**Confusion Matrix:** Our model, without distortions, convolutions, or other advanced image processing techniques, produces almost 0.97–0.99 precision scores on the validation set.
+
+## Model Building Using AutoML
+
+AutoML automates the process of building a large number of models to find the "best" model. The current version trains and cross-validates:
+
+- A default Random Forest
+- An Extremely-Randomized Forest
+- A random grid of Gradient Boosting Machines (GBMs)
+- A random grid of Deep Neural Nets
+- A fixed grid of GLMs
+- Two Stacked Ensemble models at the end
+
+## Conclusion
+
+We initially used H2O Flow to build a deep learning model demonstrated using the MNIST dataset, then explored the AutoML feature of H2O to compare models of various algorithms and select the best model using the generated insights.
+
+## References
+
+1. [H2O Tutorials](https://github.com/h2oai/h2o-tutorials)
+2. [The different flavors of AutoML](https://www.h2o.ai/blog/the-different-flavors-of-automl/)
+3. [H2O.ai Deep Learning Docs](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/deep-learning.html)

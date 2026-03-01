@@ -2,7 +2,7 @@
 
 import { cn } from '@/lib/utils/utils'
 import { monoFont } from '@/styles/fonts/fonts'
-import { Github, Twitter, Mail } from 'lucide-react'
+import { Github, Twitter, Mail, Linkedin } from 'lucide-react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
@@ -26,9 +26,10 @@ export function BaseFooter({
     showCopyright = true
 }: BaseFooterProps) {
     const socialLinks = [
-        { href: "mailto:sumit@sumit.ml", icon: <Mail className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { href: "https://github.com/sumitdotml", icon: <Github className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { href: "https://x.com/sumitdotml", icon: <Twitter className="w-3 h-3 sm:w-4 sm:h-4" /> }
+        { href: "mailto:krishr.somu@gmail.com", icon: <Mail className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { href: "https://github.com/RohitKrish46", icon: <Github className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { href: "https://linkedin.com/in/rohit-krishnan-s", icon: <Linkedin className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { href: "https://x.com/KrishrSomu", icon: <Twitter className="w-3 h-3 sm:w-4 sm:h-4" /> }
     ]
 
     return (
@@ -111,7 +112,7 @@ export function BaseFooter({
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.4 }}
                             >
-                                © {new Date().getFullYear()} sumit.ml
+                                © {new Date().getFullYear()} rohit.ml
                             </motion.span>
                         )}
                     </div>

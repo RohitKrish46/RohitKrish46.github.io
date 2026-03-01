@@ -9,7 +9,7 @@ export function HomepageSocials() {
         <div>
             <TextHeading as="h2" weight="bold">Socials</TextHeading>
             <Text>
-                I’m always open to chat! Please feel free to ping me at <Link href="mailto:sumit@sumit.ml" className="text-purple-500 hover:underline">sumit@sumit.ml</Link> or <Link href="https://x.com/sumitdotml" className="text-purple-500 hover:underline">Twitter</Link> if you have any questions or just wanna talk.
+                I’m always open to chat! Please feel free to ping me at <Link href="mailto:krishr.somu@gmail.com" className="text-purple-500 hover:underline">krishr.somu@gmail.com</Link> or <Link href="https://x.com/KrishrSomu" className="text-purple-500 hover:underline">Twitter</Link> if you have any questions or just wanna talk.
             </Text>
         </div>
 

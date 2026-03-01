@@ -194,6 +194,32 @@ export const mdxComponents: MDXComponents = {
     ),
     hr: () => <Ruler color="gray" marginTop="md" marginBottom="md" />,
 
+    // Tables
+    table: ({ children }) => (
+        <div className="not-prose overflow-x-auto my-6">
+            <table className={cn(monoFont.className, "w-full border-collapse text-sm")}>
+                {children}
+            </table>
+        </div>
+    ),
+    thead: ({ children }) => (
+        <thead className="border-b-2 border-border">{children}</thead>
+    ),
+    tbody: ({ children }) => (
+        <tbody className="divide-y divide-border/50">{children}</tbody>
+    ),
+    tr: ({ children }) => (
+        <tr className="hover:bg-muted/20 transition-colors">{children}</tr>
+    ),
+    th: ({ children }) => (
+        <th className="px-4 py-2 text-left font-semibold text-foreground text-xs uppercase tracking-wide whitespace-nowrap">
+            {children}
+        </th>
+    ),
+    td: ({ children }) => (
+        <td className="px-4 py-2 text-sm text-muted-foreground align-top">{children}</td>
+    ),
+
     // Links
     a: ({ href, children }) => (
         <a 

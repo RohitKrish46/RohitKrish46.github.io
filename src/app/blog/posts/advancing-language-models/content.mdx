@@ -1,0 +1,212 @@
+## 1. Introduction
+
+AI is becoming increasingly prevalent daily, transforming how we live and work through chatbots, virtual assistants, self-driving cars, and predictive analytics. Language models like ChatGPT have played an important role in advancing NLP, demonstrating impressive capabilities in generating human-like text and understanding language. The main drivers of AI growth have been availability of big data, improved computing power, and breakthroughs in AI research.
+
+## 2. Language Models
+
+### Evolution of Language Models
+
+Language models have evolved from simple statistical models to sophisticated transformer-based architectures.
+
+**Statistical Models** — Emerged in the late 1950s and 1960s. Relied on counting word frequencies to model probabilities of word sequences. Included n-gram models and Hidden Markov Models.
+
+**Neural-Network based Models** — In the 2000s and 2010s, RNNs and LSTMs gained prominence. These models use deep learning to learn complex patterns and relationships within language, capturing long-term dependencies in text.
+
+**Transformer based Models** — In 2017, the Transformer model was introduced, based on a self-attention mechanism that enables it to capture global dependencies in text more efficiently, allowing for faster training and better performance.
+
+## 3. Transformers and Self-Attention
+
+### Limitations of LSTMs
+
+- LSTMs are inherently sequential models that process text one word at a time — making them computationally expensive and slow
+- LSTMs are susceptible to the vanishing gradient problem — which occurs when gradients become very small as they propagate through the network
+- LSTMs are limited in their ability to model global dependencies in text
+
+### Transformer Architecture
+
+The Transformer architecture was proposed in the paper "Attention Is All You Need" to address the limitations of LSTMs. By using self-attention, the Transformer can process text in parallel and capture global dependencies more efficiently. It also uses residual connections and layer normalization to combat the vanishing gradient problem.
+
+The transformer contains an encoding component, a decoding component, and connections between the two.
+
+**Encoding:** Made up of several encoders stacked on top of each other, each broken into two sub-layers:
+1. Self-attention layer — allows the encoder to consider other words as it encodes each word
+2. Feed-forward neural network — the same network is applied for every word
+
+The decoder has the same two layers, plus an additional attention layer to help focus on important parts of the input.
+
+### The Self-Attention Mechanism
+
+Self-attention allows inputs to interact with each other and find out who they should pay more attention to.
+
+Example: In "The animal didn't cross the street because it was too tired", self-attention associates "it" with "animal" rather than "street".
+
+### Positional Encoding
+
+The transformer appends a positional encoding vector to each input embedding. These vectors follow a pattern the model learns during training, helping it understand the location of each word and the distances between them.
+
+### Decoding
+
+The encoder processes the input sequence, then the top encoder's output is converted into attention vectors K and V. These are used by each decoder in its "encoder-decoder attention" layer, allowing the decoder to concentrate on pertinent sections of the input sequence.
+
+## 4. Comparison of SOTA Transformer-Based Models
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>GPT-3</th>
+      <th>LLaMA</th>
+      <th>BERT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Architecture</td>
+      <td>Autoregressive decoder-only transformer</td>
+      <td>Hybrid encoder-decoder transformer</td>
+      <td>Bidirectional encoder-only transformer</td>
+    </tr>
+    <tr>
+      <td>Training data</td>
+      <td>45 TB from Common Crawl</td>
+      <td>Pre-trained on 1.4T tokens</td>
+      <td>3.3B tokens from Wikipedia + BookCorpus</td>
+    </tr>
+    <tr>
+      <td>Parameters</td>
+      <td>175B</td>
+      <td>7B, 13B, 33B, 65B</td>
+      <td>340M</td>
+    </tr>
+    <tr>
+      <td>Access</td>
+      <td>Paid API via OpenAI</td>
+      <td>Open source via GitHub</td>
+      <td>Open source via GitHub</td>
+    </tr>
+    <tr>
+      <td>Strengths</td>
+      <td>High-quality text generation; good zero/few-shot learning</td>
+      <td>Improves pre-trained models on new domains with limited data</td>
+      <td>High-quality text understanding; good on downstream tasks</td>
+    </tr>
+    <tr>
+      <td>Weaknesses</td>
+      <td>Requires lots of compute; may generate inaccurate content</td>
+      <td>Requires a pre-trained base; not great on generative tasks</td>
+      <td>Requires labeled data for fine-tuning; not great on generative tasks</td>
+    </tr>
+  </tbody>
+</table>
+
+### Benchmark Results
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Benchmark</th>
+      <th>Task</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GPT-3</td>
+      <td>SuperGLUE</td>
+      <td>Language understanding</td>
+      <td>Outperformed humans</td>
+    </tr>
+    <tr>
+      <td>GPT-3</td>
+      <td>GLUE</td>
+      <td>Text classification, QA</td>
+      <td>State-of-the-art</td>
+    </tr>
+    <tr>
+      <td>LLaMA</td>
+      <td>Winograd Schema Challenge</td>
+      <td>Reasoning and disambiguation</td>
+      <td>State-of-the-art</td>
+    </tr>
+    <tr>
+      <td>LLaMA</td>
+      <td>LAMBADA</td>
+      <td>Language modelling</td>
+      <td>Outperformed previous models</td>
+    </tr>
+    <tr>
+      <td>BERT</td>
+      <td>GLUE</td>
+      <td>Text classification, QA</td>
+      <td>State-of-the-art</td>
+    </tr>
+    <tr>
+      <td>BERT</td>
+      <td>SQuAD</td>
+      <td>Question answering</td>
+      <td>State-of-the-art</td>
+    </tr>
+    <tr>
+      <td>BERT</td>
+      <td>NER</td>
+      <td>Entity recognition</td>
+      <td>Outperformed previous models</td>
+    </tr>
+  </tbody>
+</table>
+
+## 5. Review of Language Model Based AI Tools
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>Main Function</th>
+      <th>AI Engine</th>
+      <th>Industry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jasper.ai</td>
+      <td>AI Writing Assistant</td>
+      <td>OpenAI GPT-3</td>
+      <td>Marketing & Advertising</td>
+    </tr>
+    <tr>
+      <td>Articolo</td>
+      <td>AI Content Creation</td>
+      <td>Custom proprietary</td>
+      <td>Marketing & Advertising</td>
+    </tr>
+    <tr>
+      <td>Rytr</td>
+      <td>AI Writing Assistant</td>
+      <td>OpenAI GPT-3</td>
+      <td>General Purpose</td>
+    </tr>
+    <tr>
+      <td>Kickresume</td>
+      <td>AI Resume Builder</td>
+      <td>Custom proprietary</td>
+      <td>Job Search & Recruitment</td>
+    </tr>
+    <tr>
+      <td>ContentBot.ai</td>
+      <td>AI Writing Assistant</td>
+      <td>OpenAI GPT-3</td>
+      <td>Marketing & Advertising</td>
+    </tr>
+  </tbody>
+</table>
+
+## 6. Conclusion
+
+The development of transformers and self-attention mechanisms has had a profound impact on NLP and deep learning. These technologies have addressed long-standing issues with sequence modeling and paved the way for new advances in machine translation, summarization, and question answering. As the field continues to evolve, we can expect further breakthroughs in advanced language models that generate even more human-like responses.
+
+## 7. References
+
+1. [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
+2. [Long Short-Term Memory (LSTM)](https://medium.com/@kangeugine/long-short-term-memory-lstm-concept-cb3283934359)
+3. [DALL-E 2 for image generation](https://openai.com/index/dall-e-2/)

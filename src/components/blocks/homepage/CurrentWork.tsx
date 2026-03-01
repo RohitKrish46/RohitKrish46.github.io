@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Code, Brain, Divide, Rotate3D } from 'lucide-react'
+import { Cpu, Eye, Sparkles, BookOpen } from 'lucide-react'
 import { StackVertical } from '@/components/layout/layout-stack/layout-stack'
 import Text from '@/components/ui/text/text'
 import TextHeading from '@/components/ui/text-heading/text-heading'
@@ -43,29 +43,21 @@ function WorkItem({ icon, text, delay, hyperlink, hyperlinkText, endText }: Work
 export function CurrentWork() {
     const items = [
         {
-            icon: <Brain className="w-4 h-4" />,
-            text: "Studying traditional ML"
+            icon: <Cpu className="w-4 h-4" />,
+            text: "Building and deploying AI/ML systems"
         },
         {
-            icon: <Divide className="w-4 h-4" />,
-            text: "Learning math for ML"
+            icon: <Eye className="w-4 h-4" />,
+            text: "Exploring computer vision and generative AI"
         },
         {
-            icon: <Code className="w-4 h-4" />,
-            text: "Mastering the language of Python"
+            icon: <Sparkles className="w-4 h-4" />,
+            text: "Tinkering with LLMs and multimodal models"
         },
-
         {
-            icon: <Rotate3D className="w-4 h-4" />,
-            text: "Learning to get comfy with PyTorch till 5D",
+            icon: <BookOpen className="w-4 h-4" />,
+            text: "Reading about cosmology and the origins of life"
         }
-        // {
-        //     icon: <BookOpen className="w-4 h-4" />,
-        //     text: "Reading ",
-        //     hyperlink: "/notes/books",
-        //     hyperlinkText: "ML Books",
-        //     endText: ""
-        // }
     ]
 
     return (

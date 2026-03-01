@@ -13,7 +13,7 @@ export default function About() {
         <BaseContainer size="md" paddingX="md" paddingY="lg">
             <StackVertical gap="md">
                 <div className="flex items-center justify-between">
-                    <DynamicBreadcrumb 
+                    <DynamicBreadcrumb
                         items={[
                             { href: '/', label: 'Home', emoji: '👾' },
                             { label: 'About' }
@@ -23,42 +23,46 @@ export default function About() {
                 </div>
 
                 <div>
-                <TextHeading as="h1" weight="bold">
-                    My Novice Journey: A Monologue
-                </TextHeading>
-					<Text variant="muted" size="xs" className="mb-8">January 14, 2025</Text>
-                <StackVertical gap="md">
-                    <Text>
-                            Hi, thanks for checking in! I like going on random tangents when I write, so I'm not sure if this is the best way to write about myself. But hey, I'm glad you're here.
-                    </Text>
+                    <TextHeading as="h1" weight="bold">
+                        About Me
+                    </TextHeading>
+                    <Text variant="muted" size="xs" className="mb-8">Rohit Krishnan Somasundaram</Text>
+                    <StackVertical gap="md">
+                        <Text>
+                            Hi! Thanks for stopping by. I&apos;m a ML Engineer based in Chennai, India, working at the intersection of machine learning, software engineering, and generative AI.
+                        </Text>
 
-                    <Text>
-                        I have an interesting name. During my middle and high school years, I knew the existences of only 2 people with the same name as me. I thought it was not a very common name in my country, but turns out a name isn't limited to a country. And for those wondering, no I am not from India. Although I understand why you'd think so. It's all good.
-                    </Text>
-                    <Text>
-                    I studied in Japan as a business undergraduate for 4 years and received a degree in it, but I was truly never interested in anything related to business. Well, it's a long story about why I ended up at the university I ended up in and pursued the kind of degree I pursued despite having next to no interest in any of that, but life does really work in fascinating ways. I must say that it hasn't turned out too bad for myself.
-                    </Text>
-                    <Text>
-                        To be very brief, I was always into math and was always fascinated by the engineering behind a lot of things I would see in real life. Bridges have always been one of the most splendid pieces of architecture to me; these towering figures effortlessly handle countless vehicles weighing tons, and humans somehow learned how to do that? It's incredible. I tell this to my friends every time we go on some trips here in Japan (god bless this country is full of these) and they try to stay amused for my sake, but I can see it that their thoughts lie elsewhere. Maybe I'm just a nerd. But I think bridges are cool. So are rockets. Humans built all that.
-                        
-                    </Text>
-                    <Text>
-                        So yeah, I got introduced to the concept of Machine Learning by virtue of a professor at my university when I was a 3rd year student, completely frustrated with myself because I hated my major and had no option to pursue anything related to STEM. This man changed my life.
-                    </Text>
-                    <Text>
-                        Of course, I was not as driven when it came to getting indulged in AI-related learning as I am now, but I gradually began building an interest in the so-called AI-related field. Things ended up happening when I was a 4th-year student, and I ended up getting a new-grad role in SWE here in Japan. I had 0 experience in software, yet somehow I managed to break into tech. I know I am not revealing some important bits here about what went down, but I believe there was a good mixture of luck as well as just the tenacity of making something happen no matter what to break into tech (not necessarily AI since I knew it was a leap too big to take, although I did not take it out of the equation).
-                    </Text>
-                    <Text>
-                        I like to think of my progression in terms of a horizontal axis of real numbers between -10 to 10, where I believe -10 was me starting a degree that I clearly was not interested in after failing to be accepted into the program I wanted, -5 was when I found this professor who opened a new door towards the field of AI for me, -3 was when I first got a technical internship purely out of me selling my determination to learn, and finally 0 — the complete resetting of my negative career scale — when I first received a full-time tech role (my current one). In other words, my detours have finally converged, and my journey has finally started.
-                    </Text>
-                    <Text>
-                        I will not say that I was glad I took this detour, but I am glad that I got to experience it. I am glad that I got lucky. Or maybe I wasn't. Maybe this was always going to be how it was. In any case, it's an exciting time to be alive.
-                    </Text>
-                </StackVertical>
-            </div>
+                        <Text>
+                            My path into ML wasn&apos;t a straight line. I started with a Bachelor&apos;s in Computer Science at Sairam Engineering College in Chennai, where I first got a taste of algorithms and software. It was during my Master&apos;s in Computer Science at Simon Fraser University — specializing in Visual Computing — that I found the thing that truly hooked me: the mathematics and intuition behind how machines learn to see and understand the world.
+                        </Text>
+
+                        <Text>
+                            After SFU, I joined Prodapt Solutions as an Associate Software Engineer, which grounded me in production systems. Then I made the full jump into ML — first as a Research Intern at the Medical Image Analysis Lab at SFU applying deep learning to medical imaging, then into industry roles at VisionBox Inc. and AmiableAi Inc., building and shipping AI systems in computer vision and NLP.
+                        </Text>
+
+                        <Text>
+                            What drives me isn&apos;t just the engineering — it&apos;s the questions underneath. How does intelligence arise? What does it mean for a system to understand something? These questions pull me toward cosmology and the origins of life as much as toward ML research. I find the boundary between physics, biology, and computation endlessly fascinating.
+                        </Text>
+
+                        <Text>
+                            This site is where I think out loud — about ML, math, and ideas I&apos;m working through. If any of it resonates, I&apos;d love to hear from you.
+                        </Text>
+
+                        <Text>
+                            You can reach me at{' '}
+                            <a href="mailto:krishr.somu@gmail.com" className="text-purple-500 hover:underline">krishr.somu@gmail.com</a>
+                            {' '}or find me on{' '}
+                            <a href="https://github.com/RohitKrish46" className="text-purple-500 hover:underline" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            ,{' '}
+                            <a href="https://linkedin.com/in/rohit-krishnan-s" className="text-purple-500 hover:underline" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            , or{' '}
+                            <a href="https://x.com/KrishrSomu" className="text-purple-500 hover:underline" target="_blank" rel="noopener noreferrer">Twitter</a>
+                            .
+                        </Text>
+                    </StackVertical>
+                </div>
             </StackVertical>
             <SectionFooter color="purple" />
         </BaseContainer>
     )
 }
-
