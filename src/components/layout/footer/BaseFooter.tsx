@@ -103,18 +103,6 @@ export function BaseFooter({
                                 ))}
                             </div>
                         )}
-
-                        {/* Copyright */}
-                        {showCopyright && (
-                            <motion.span 
-                                className="text-[10px] sm:text-xs text-purple-400"
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 0.4 }}
-                            >
-                                © {new Date().getFullYear()} rohit.ml
-                            </motion.span>
-                        )}
                     </div>
                 )}
             </div>
