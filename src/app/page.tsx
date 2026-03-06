@@ -178,7 +178,7 @@ export default function Home() {
                         {/* Photo */}
                         <div className="relative w-full aspect-square rounded-xl overflow-hidden">
                             <Image
-                                src="/image.png"
+                                src="/Image.png"
                                 alt="Rohit Krishnan Somasundaram"
                                 fill
                                 className="object-cover object-top"
