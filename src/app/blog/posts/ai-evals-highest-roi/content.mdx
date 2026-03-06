@@ -1,0 +1,131 @@
+If you're building AI products, there's one skill that pays off more than almost anything else: learning how to evaluate your AI application. Not just "does it feel right" but actually measuring whether it's working and why it's failing. This post breaks down what AI evals are, why they're different from traditional software testing, and a practical process to build them.
+
+## What Are AI Evals?
+
+An AI eval is simply a systematic way to measure and improve an AI application.
+
+With traditional software, testing is straightforward. You know the inputs, you know the expected outputs, and you write unit tests to confirm the system behaves correctly. Given input X, you always get output Y.
+
+AI doesn't work that way. The same prompt can return a different response each time. Users can ask anything in any way. There's no single "right" answer to check against. This is what makes evals necessary — and what makes them hard.
+
+When you lose the guarantee that X always produces Y, you need a different approach entirely.
+
+## Model Evals vs. Product Evals
+
+Before going further, it's worth clarifying something. The word "eval" gets used for two very different things:
+
+**Model Evals** measure how good an LLM is in general. These are benchmarks like MMLU (which tests knowledge across 57 academic subjects) or HumanEval (which checks if a model can write code that passes unit tests). Labs run these to compare models against each other.
+
+**Product Evals** measure how well an AI works *for your specific use case*. These are the ones you need to build yourself.
+
+Here's why the distinction matters: a model that scores 92% on MMLU might actually be worse for your insurance claims app than one that scores 87%. General benchmarks tell you nothing about whether a model handles your domain rules, escalates correctly, or avoids making promises it shouldn't. Product evals answer the question model benchmarks can't — "which model actually works best for what I'm building?"
+
+## Three Terms Worth Knowing
+
+- **Evaluation** — the specific quality dimension you're judging (e.g., tone, accuracy, escalation).
+- **Rubric** — the criteria that define what "good" looks like. Without a rubric, "helpful" just means whatever each person thinks it means.
+- **Benchmark** — your full test suite: test cases + metrics + rubrics combined.
+
+## Why Generic Metrics Fall Short
+
+"Was the response helpful?" sounds like a reasonable metric. But it's nearly useless without a rubric to back it up.
+
+Take a real example: a customer asks "Can I return my shoes after 45 days?" A good AI response needs to get *several things* right at once:
+
+- **Policy accuracy** — is the answer actually correct?
+- **Escalation** — does it know when to bring in a human?
+- **Tone** — is it empathetic, not robotic?
+- **Business risk** — does it avoid making promises the company can't keep?
+
+A single helpfulness score collapses all of this into one number that tells you almost nothing. Good evals separate these dimensions and define exactly what "good" looks like for each one.
+
+The best rubrics get built collaboratively. Domain experts know how things actually work. Product teams know what users need. Engineers figure out how to make it measurable.
+
+## A 6-Step Process for Building Evals
+
+### Step 1: Look at Your Data
+
+Start by reading through logs and traces of real interactions. Don't theorize — look at what's actually happening.
+
+Ask yourself: "Is this the way the AI should have responded?" When you spot something wrong, write it down. Have one person own this initial pass (a PM or domain expert works well) so you don't get stuck in committee debates. Keep going until you stop seeing new types of failures — that's your signal you've covered the main ground.
+
+### Step 2: Collect Simple Human Feedback
+
+Before building anything automated, get humans to rate responses. Even a simple "Was this satisfactory? If not, why?" goes a long way. This becomes your ground truth — the baseline everything else gets measured against.
+
+### Step 3: Name the Failure Modes
+
+Now take stock of what you've seen. What are the recurring ways the AI goes wrong? Name them clearly. This is different from just noticing problems — you're categorizing them so you can act on them.
+
+### Step 4: Find the Patterns
+
+Group similar failures together. An LLM can help here — give it your notes and ask it to find clusters. You might discover that 40% of failures are about wrong escalation, 30% are tone problems, and 20% are policy mistakes. Now you know where to focus.
+
+### Step 5: Pick the Right Metrics
+
+Don't try to measure everything. Build metrics for the failure modes that keep recurring, not one-off mistakes you can just fix directly. If a bug can be patched once and won't come back, it doesn't need a metric.
+
+### Step 6: Keep Iterating
+
+Evals aren't a one-time project. Every week in production will surface new edge cases you didn't anticipate. Add them to your benchmark over time. The system gets better as the eval suite grows.
+
+## Three Ways to Measure AI Behavior
+
+### Human Evaluation
+
+A human reviews each AI response and judges it. This is the most accurate method and is your source of truth for everything else.
+
+The catch: it doesn't scale. If your app handles thousands of interactions a day, you can't manually review all of them. Use human eval for calibration and for catching edge cases — not as your primary monitoring strategy.
+
+### Code-Based Checks
+
+Simple, fast, deterministic checks you write in code. Examples:
+
+- Does the response include a required disclaimer?
+- Is the output valid JSON?
+- Is the response under 300 words?
+- Does it mention a competitor's name (when it shouldn't)?
+
+These are cheap and reliable, but only work for things you can express as explicit rules. Tone, reasoning quality, and nuance can't be checked this way.
+
+### LLM-as-Judge
+
+Use a separate AI model to evaluate your AI's responses. This lets you assess subjective qualities — tone, escalation decisions, reasoning quality — at scale.
+
+The key to making this work: **give the judge one job at a time**. Don't ask it to evaluate everything in one prompt. Ask it to check escalation. Then separately ask it to check tone. Focused judges give cleaner, more reliable results.
+
+In practice, these three methods complement each other. Human evaluation is the most accurate but the slowest and most expensive — it doesn't scale past a few hundred examples. Code-based checks are the opposite: fast, cheap, and infinitely scalable, but only useful for things you can express as explicit rules. LLM-as-judge sits in the middle — it scales well, handles subjective quality dimensions, and costs a fraction of human review. Most teams end up using all three: code checks for the easy stuff, LLM judges for the nuanced stuff, and human eval to keep both calibrated.
+
+## Calibrating Your LLM Judge
+
+Just writing detailed criteria for your LLM judge doesn't mean it'll actually agree with your human experts. You have to calibrate it.
+
+The process is simple:
+
+1. Have a human score a set of example responses.
+2. Run the LLM judge on the same examples.
+3. Find where they disagree.
+4. Update the judge's prompt and criteria to close the gap.
+5. Repeat until they agree closely enough.
+
+This is the step most teams skip — and it's why their automated evals end up telling them something different than reality.
+
+## Common Objections (and Why They Don't Hold Up)
+
+**"Evals are just unit tests."** Unit tests check deterministic behavior. Evals handle the messier, probabilistic world of AI. They're a different tool for a different problem.
+
+**"We just do vibe checks."** Vibe checks — manually trying the product and seeing how it feels — are a fine starting point. But they don't scale, and they're biased toward whatever you happened to test. The teams that say they only do vibe checks are usually doing implicit evals constantly — they've just never formalized them.
+
+The point of evals isn't to be rigorous for its own sake. It's to give you reliable, repeatable signal so you can actually improve your product instead of guessing.
+
+## Two Things That Make a Difference
+
+**Look at your data, even when it's uncomfortable.** Most teams avoid their logs because it's demoralizing to see your AI fail. But that's where the signal is. Get in there, read the bad examples, and understand why they went wrong.
+
+**Don't try to eval everything.** You'll get overwhelmed and abandon the whole thing. Start with the two or three failure modes that matter most and build from there.
+
+## The Bottom Line
+
+Building AI products without evals is like releasing software without any tests — you might get lucky, but you have no reliable way to know if things are working or to confidently make them better.
+
+Evals give you that foundation. Start with your real data, name your failure modes, pick a few metrics that matter, and keep refining. The goal isn't a perfect eval system — it's steady improvement you can actually measure.

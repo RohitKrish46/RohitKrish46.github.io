@@ -2,6 +2,14 @@ import { BlogPost } from "../_types/blog"
 
 export const blogPosts: BlogPost[] = [
     {
+        id: 3,
+        title: "AI Evals: The Highest ROI Activity for Building Great AI Products",
+        description: "A framework for building effective AI evaluations — why evals matter, the difference between model and product evals, and a 6-step process to get started.",
+        date: "March 5, 2026",
+        readingTime: "12 min read",
+        slug: "ai-evals-highest-roi"
+    },
+    {
         id: 2,
         title: "Advancing Language Models: How Transformers and Self-Attention Are Changing the Game",
         description: "How Transformers and Self-Attention are advancing the frontiers of NLP — from statistical models to GPT-3, LLaMA, and BERT.",

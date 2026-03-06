@@ -34,7 +34,6 @@ export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const links = [
-        { href: '/about', label: 'About' },
         { href: '/blog', label: 'Blog' },
         { href: '/learning', label: 'Learning' },
         { href: '/notes', label: 'Notes' }
