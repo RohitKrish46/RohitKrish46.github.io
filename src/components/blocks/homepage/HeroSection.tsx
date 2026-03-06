@@ -23,7 +23,7 @@ export function HeroSection() {
                     className="flex-shrink-0"
                 >
                     <Image
-                        src="/image.png"
+                        src="/Image.png"
                         alt="Rohit Krishnan Somasundaram"
                         width={140}
                         height={140}
