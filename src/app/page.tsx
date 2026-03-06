@@ -71,8 +71,10 @@ const timeline = [
 ]
 
 const skills = [
-    "Python", "PyTorch", "TensorFlow", "Computer Vision",
-    "NLP / LLMs", "Generative AI", "Deep Learning", "MLOps", "AWS", "Docker",
+    "PyTorch", "FastAPI", "Docker",
+    "AWS", "MLflow", "Vertex AI", "BigQuery", "Kubernetes",
+    "RAG", "MLOps", "Datadog",
+    "PostgreSQL",
 ]
 
 const typeConfig = {
@@ -223,20 +225,19 @@ export default function Home() {
                             </div>
                         </div>
 
-                        {/* Education cards */}
+                        {/* Publications */}
                         <div className="w-full space-y-3">
-                            <h3 className="text-sm font-semibold">Education</h3>
-                            <div className="w-full rounded-lg border border-border p-4 space-y-1">
-                                <div className="text-sm font-medium">Simon Fraser University</div>
-                                <div className="text-xs text-purple-500">M.S. Computer Science</div>
-                                <div className="text-xs text-muted-foreground">Visual Computing · Sep 2019 – Apr 2021</div>
-                                <div className="text-xs text-muted-foreground">Burnaby, Canada</div>
-                            </div>
-                            <div className="w-full rounded-lg border border-border p-4 space-y-1">
-                                <div className="text-sm font-medium">Sairam Engineering College</div>
-                                <div className="text-xs text-purple-500">B.S. Computer Science</div>
-                                <div className="text-xs text-muted-foreground">Aug 2014 – Apr 2018 · Chennai, India</div>
-                            </div>
+                            <h3 className="text-sm font-semibold">Publications</h3>
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-030-04061-1_24" target="_blank" rel="noopener noreferrer" className="block w-full rounded-lg border border-border p-4 space-y-1 hover:border-purple-500/50 transition-colors">
+                                <div className="text-sm font-medium leading-snug">Detection of Lymph Nodes Using Centre of Mass and Moment Analysis</div>
+                                <div className="text-xs text-purple-500 mt-1">Springer · LNCVB vol. 31 · 2019</div>
+                                <div className="text-xs text-muted-foreground">Computer Aided Intervention and Diagnostics in Clinical and Medical Images</div>
+                            </a>
+                            <a href="https://www.ijiee.org/index.php/ijiee/article/view/263" target="_blank" rel="noopener noreferrer" className="block w-full rounded-lg border border-border p-4 space-y-1 hover:border-purple-500/50 transition-colors">
+                                <div className="text-sm font-medium leading-snug">Editorial Context Solution Using Real Time Interactive Visualisation – Data Driven Story Telling</div>
+                                <div className="text-xs text-purple-500 mt-1">IJIEE · Vol. 8, Issue 3 · 2018</div>
+                                <div className="text-xs text-muted-foreground">International Journal of Information and Electronics Engineering</div>
+                            </a>
                         </div>
 
                         {/* Skills strip */}
